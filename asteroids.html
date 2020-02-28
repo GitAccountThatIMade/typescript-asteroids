@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <style>
+        @import url(style.css);
+
+        p.highlight {
+            color: red;
+        }
+
+        svg {
+            background-color: rgb(41, 41, 36);
+        }
+    </style>
+    <script src="svgelement.js"></script>
+    <script src="observable.js"></script>
+    <script src="asteroids.js"></script>
+</head>
+
+<body>
+    <h1 id="gamename">Asteroids</h1>
+    <h1 id="pageTitle">GET READY!</h1>
+    <svg id="canvas" width="600" height="600" />
+    <p id="health">Health: 100</p>
+    <p id="score">Score: 0</p>
+    <p id="roundInfo"></p>
+    <b>How to play: (Zoom out if you can't see all the instructions)</b>
+    <p> W - Accelarate/Forward (You accelarate for a bit, then move a constant speed. Releasing leads to decelleration)
+        <br>
+        A - Left<br>
+        D - Right<br>
+        SPACE - Shoot<br>
+
+        Avoid the asteroids (when shot, they split in two and you get 100 points. <br>
+        You lose your health while an asteroid is hitting you<br>
+        Bullets not wrapping is a stylistic choice (The asteroids and player ship will still wrap)<br>
+
+        <b>Every second round is a Space Invaders round.
+        </b>
+
+    </p>
+</body>
+
+</html>
